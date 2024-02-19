@@ -1,0 +1,12 @@
+{
+"hidden_channels": 64,
+"mask_ratio": 10,
+"mask_neg_ratio": 5,
+"dropout": 0.3,
+"batch_size": 256,
+"lr": 0.01,
+"wd": 0.0005,
+"num_epochs": 50,
+"dae_num_epochs": 60,
+"slaps_top_k": 10
+}

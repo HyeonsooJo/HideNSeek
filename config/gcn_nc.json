@@ -1,0 +1,7 @@
+{
+"hidden_channels": 64,
+"dropout": 0.3,
+"lr": 0.01,
+"wd": 5e-05,
+"num_epochs": 200
+}

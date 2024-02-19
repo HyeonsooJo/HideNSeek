@@ -1,0 +1,8 @@
+{
+"hidden_channels": 32,
+"dropout": 0.3,
+"batch_size": 256,
+"lr": 0.005,
+"wd": 0.0005,
+"num_epochs": 50
+}
