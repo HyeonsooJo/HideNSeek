@@ -2,6 +2,13 @@
 Source code of KDD'24 submission
 "On Measuring Unnoticeability of Graph Adversarial Attacks: Observations, New Measure, and Applications"
 
+## Environments
+- python 3.7.11
+- numpy==1.21.2
+- torch==1.10.0 (with CUDA 11.3)
+- sklearn==1.0.2
+- scipy==1.7.3
+
 ## Generate Attack Graph
 
 example: cora dataset  /  attack method: random  /  attack rate: 10%
