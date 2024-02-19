@@ -30,19 +30,18 @@ class leo(nn.Module):
         self.auxloss = torch.zeros(1).to(self.device)
 
         gnn_sub_score = self.leo_gnn_model(inputs_list[0], edges)
-        try:
+        if not y == None:
             gnn_loss = self.leo_gnn_model._loss(gnn_sub_score, y.view(-1))
-        except:
-            pdb.set_trace()
-        self.auxloss += gnn_loss
+            self.auxloss += gnn_loss
         sub_scores.append(gnn_sub_score)
         embedding1 = self.leo_gnn_model.get_embedding(edges)
 
 
         struct_sub_score = self.leo_struct_model(inputs_list[1], edges)
-        self.auxloss += self.leo_struct_model.auxloss
-        struct_loss = self.leo_struct_model._loss(struct_sub_score, y.view(-1))
-        self.auxloss += struct_loss
+        if not y == None:
+            self.auxloss += self.leo_struct_model.auxloss
+            struct_loss = self.leo_struct_model._loss(struct_sub_score, y.view(-1))
+            self.auxloss += struct_loss
         sub_scores.append(struct_sub_score)
         embedding2 = self.leo_struct_model.get_embedding(edges)
 

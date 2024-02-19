@@ -75,8 +75,6 @@ def train(args, model, inputs, seed, leo_config, train_loader, valid_loader, tes
 
 
 def leo_train(args, leo_model, input_list, seed, leo_config, train_loader, valid_loader, test_loader):    
-     
-
     ###  pretrain only dae #### 
     leo_model.train()
 

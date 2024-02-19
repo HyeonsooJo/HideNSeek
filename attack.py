@@ -8,7 +8,7 @@ import torch
 import os
 
 from attack import *
-from lp_train import *
+from leo_train import *
 from model import *
 from utils import *
 
@@ -65,8 +65,6 @@ if __name__ == '__main__':
 
 
     victim_model.fit(features, adj, labels, idx_train, idx_val, train_iters=nc_config['num_epochs'])  
-    model_state_dict = victim_model.state_dict()
-    victim_model.load_state_dict(model_state_dict)
 
     surrogate_model = GCN(nfeat=args.nfeat, 
                           nhid=nc_config['hidden_channels'], 
