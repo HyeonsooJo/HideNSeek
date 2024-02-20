@@ -45,3 +45,9 @@ python q2_main.py --graph_name cora --attacker pgd --attack_rate 10 --seed 3
 python q2_main.py --graph_name cora --attacker pgd --attack_rate 10 --seed 4
 
 python q2_plot.py --graph_name cora --attacker pgd --attack_rate 10
+
+## Further Application (Q3)
+
+example: cora dataset  /  attack method: PGD attack  /  attack rate: 10%  /  GCN type: MedianGCN
+
+python q3_main.py --graph_name cora --attacker pgd --attack_rate 10 --seed 0 --gcn_name mediangcn
