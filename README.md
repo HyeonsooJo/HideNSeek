@@ -1,5 +1,5 @@
 # HideNSeek
-Source code of KDD'24 submission
+Source code of KDD'25 submission (resubmission)
 "On Measuring Unnoticeability of Graph Adversarial Attacks: Observations, New Measure, and Applications"
 
 ## Environments
